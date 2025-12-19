@@ -8,7 +8,7 @@ export const offers: Offer[] = [
     {
         id: 1,
         text: "✨ عروض حصرية: خصم 10% على وحدات مشروع الأندلس لفترة محدودة! ✨",
-        link: "/projects/1"
+        link: "/projects/42"
     },
     {
         id: 2,

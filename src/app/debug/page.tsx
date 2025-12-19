@@ -2,7 +2,7 @@ import { getBuildings, getBuildingById } from "@/lib/api";
 
 export default async function DebugPage() {
     const allBuildings = await getBuildings();
-    const building1 = await getBuildingById("1");
+    const building1 = await getBuildingById("42");
 
     return (
         <div className="p-10 bg-white text-black font-mono">
