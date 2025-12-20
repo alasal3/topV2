@@ -1,6 +1,6 @@
 import { supabase } from './supabase';
-import { Building, Event as DBEvent } from '@/types/database';
-import { EventItem } from '@/data/events';
+import { Building, Event as DBEvent } from '../types/database';
+import { EventItem } from '../data/events';
 import {
     Gift,
     Mic2,
@@ -100,7 +100,7 @@ export async function getEvents(): Promise<EventItem[]> {
         .order('created_at', { ascending: false });
 
     if (error) {
-        console.error('Error fetching events:', error);
+        console.error('Error fetching events:', JSON.stringify(error, null, 2));
         return [];
     }
 
